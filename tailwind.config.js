@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       width: {
         200: "40rem",
+        88: "22rem",
+        80: "20rem",
       },
       colors: {
         gray: {

@@ -77,15 +77,14 @@ const Header = () => {
           </>
         </Drawer.Body>
       </Drawer>
-      <div className="flex flex-col w-full pb-20">
-        <div className="w-full flex flex-row items-center justify-between border-b-2 border-gray-200 xsm:px-20 lg:px-40 py-4">
+      <div className="flex flex-col w-full">
+        <div className="w-full flex flex-row items-center justify-between border-b-2 border-gray-200 xsm:px-20 lg:px-40 py-2">
           <div className="flex items-center">
             <img
               src={logo}
               alt=""
-              className="lg:w-32 lg:h-32 sm:w-24 sm:h-24 xsm:w-16 xsm:h-16 rounded-sm"
+              className="lg:w-24 lg:h-24 sm:w-24 sm:h-24 xsm:w-16 xsm:h-16 rounded-md"
             />
-            <h3 className="italic ml-4">Україно Рідна</h3>
           </div>
           <div
             className="xsm:block md:hidden cursor-pointer"
@@ -97,8 +96,8 @@ const Header = () => {
           </div>
 
           <div className="flex xsm:hidden md:block">
-            <div className="flex flex-row items-start justify-center items-center">
-              <span className="font-semibold text-lg mr-4 h-full ">
+            <div className="flex flex-row items-start justify-center">
+              <span className="font-semibold text-lg mr-4 h-full mt-7">
                 Contact Us:{" "}
               </span>
 
@@ -131,6 +130,8 @@ const Header = () => {
                     +380663474444
                   </a>
                 </div>
+              </div>
+              <div className="">
                 <div className="flex flex-row mt-2">
                   <img src={email} alt="" className="w-5 h-5 mr-2" />
                   <div className="flex flex-col">
@@ -142,16 +143,16 @@ const Header = () => {
                     </a>
                   </div>
                 </div>
+                <a
+                  className="flex items-center mt-2 text-black hover:text-black"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.facebook.com/profile.php?id=100081320017600"
+                >
+                  <FacebookIcon className="cursor-pointer" />
+                  <span className="ml-2 ">Україно Рідна</span>
+                </a>
               </div>
-              <a
-                className="flex items-center justify-center"
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.facebook.com/profile.php?id=100081320017600"
-              >
-                <FacebookIcon className="mt-4 cursor-pointer" />
-                <span className="mt-4 ml-2">Україно Рідна</span>
-              </a>
             </div>
           </div>
         </div>

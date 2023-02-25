@@ -8,6 +8,8 @@ import avatar2 from "./img/avatar2.jpg";
 import avatar3 from "./img/avatar3.jpg";
 import "rsuite/dist/rsuite.min.css";
 import { Header } from "./components/Header";
+import post2 from "./img/post2.jpg";
+import { Post1 } from "./components/post1";
 
 const carouselLinks = [image1, image2, image3];
 
@@ -25,62 +27,34 @@ function App() {
   return (
     <>
       <Header />
-      <div className="lg:px-40 sm:px-20 px-10 mt-8">
-        <div className=" border-b-2 border-gray-200">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum
-        </div>
-        <h2 className="mt-4 w-full text-center font-semibold uppercase text-3xl  border-b-2 border-gray-200 pb-4">
-          We already helped:
-        </h2>
-        <div className="flex items-start justify-between w-full mt-12 border-b-2 border-gray-200 pb-8">
-          <span className="w-200">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-          </span>
-          <img
-            src={carouselLinks[activeLinkIndex]}
-            alt=""
-            className="sm:w-64 w-200 h-64"
-          />
+      <div className="lg:px-40 sm:px-20 px-10">
+        <Post1 />
+        <div className="border-b-2 border-gray-200 mt-2 pb-2">
+          <h3>
+            Громадська організація «Офіс на Банковій» та БО БФ Украіна Рідна
+            передали 3D-принтер до медичних сил ЗСУ!
+          </h3>
+          <div className="flex flex-row items-start justify-between mt-2">
+            <span className="text-xl mr-2">
+              Сьогодні наша волонтерська команда завітала до Регіонального
+              санітарно-епідеміологічного управління командування медичних сил
+              ЗСУ. На прохання медиків-захисників України, на основі підписаного
+              нами меморандуму, ми передали до установи 3D-принтер, який має
+              значно полегшити працівникам процеси виготовлення ємностей та
+              іншого потрібного лабораторного обладнання.
+              <br />
+              <br />
+              Висловлюємо щиру подяку за сприяння у наших добрих справах
+              Комітету гуманітарно-інформаційної політики ВРУ та його голові
+              Микиті Руслановичу Потураєву! Ваша допомога неоціненна!
+              <br />
+              <br />
+              Разом до перемоги!
+              <br />
+              Слава Україні!
+            </span>
+            <img src={post2} alt="" className="w-88 h-80" />
+          </div>
         </div>
         <h2 className="mt-4 w-full text-center font-semibold uppercase text-3xl  border-b-2 border-gray-200 pb-4">
           Founders:
