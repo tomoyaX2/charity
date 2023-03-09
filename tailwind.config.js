@@ -7,11 +7,16 @@ module.exports = {
         200: "40rem",
         88: "22rem",
         80: "20rem",
+        164: "41rem",
       },
       colors: {
         gray: {
           footerBackground: "#2f2f2f",
           footerText: "#999999",
+        },
+        blue: {
+          100: "hsl(211, 85%, 95%)",
+          400: "mediumblue",
         },
       },
       screens: {
