@@ -9,11 +9,18 @@ import { Team } from "./components/Team";
 import { BankDetails } from "./components/BankDetails";
 import { Navbar, Nav } from "rsuite";
 import { useState } from "react";
+import { Post3 } from "./components/post3";
+import { Post4 } from "./components/post4";
+import { Post5 } from "./components/post5";
+import { Post6 } from "./components/post6";
+import { Post7 } from "./components/post7";
+import { Post8 } from "./components/post8";
+import { Post9 } from "./components/post9";
 
 function App() {
   const [navState, setNavState] = useState("about");
   return (
-    <div className="pb-20">
+    <div className="pb-20 flex flex-col items-center">
       <Header />
       <Navbar
         appearance="subtle"
@@ -21,10 +28,11 @@ function App() {
       >
         <Nav onSelect={(key) => setNavState(key)} activeKey={navState}>
           <Nav.Item eventKey="about">Про нас</Nav.Item>
-          <Nav.Item eventKey="events">Події</Nav.Item>
+          <Nav.Item eventKey="events">Збори</Nav.Item>
+          <Nav.Item eventKey="report">Звiти</Nav.Item>
         </Nav>
       </Navbar>
-      <div className="lg:px-40 sm:px-20 px-10">
+      <div className="lg:px-40 sm:px-20 px-10 max-w-400">
         {navState === "about" && (
           <>
             <Intro />
@@ -39,7 +47,18 @@ function App() {
         {navState === "events" && (
           <>
             <Post1 />
+            <Post4 />
+            <Post6 />
+            <Post8 />
+          </>
+        )}
+        {navState === "report" && (
+          <>
             <Post2 />
+            <Post3 />
+            <Post5 />
+            <Post7 />
+            <Post9 />
           </>
         )}
       </div>

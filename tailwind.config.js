@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        200: "40rem",
+        400: "40rem",
         88: "22rem",
         80: "20rem",
         164: "41rem",
+        100: "25rem",
       },
       colors: {
         gray: {

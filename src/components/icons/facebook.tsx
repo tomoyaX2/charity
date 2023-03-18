@@ -1,7 +1,14 @@
-const FacebookIcon = ({ className }: { className?: string }) => {
+const FacebookIcon = ({
+  className,
+  onClick,
+}: {
+  className?: string;
+  onClick?: () => void;
+}) => {
   return (
     <svg
       className={className}
+      onClick={onClick}
       width="26px"
       height="26px"
       viewBox="0 0 26 26"

@@ -1,19 +1,24 @@
+import { FacebookIcon } from "../icons/facebook";
+
 const Post1 = () => {
+  const onRedirect = () => {
+    window.location.replace(
+      "https://www.facebook.com/watch/?extid=CL-UNK-UNK-UNK-IOS_GK0T-GK1C&mibextid=2Rb1fB&v=454832936826793"
+    );
+  };
   return (
     <div className="border-b-2 border-gray-200 mt-8 pb-2">
       <div className="">
-        <h3>
-          Громадська організація «Офіс на Банковій» на захисті червоно книжкових
-          тварин Київщини.
-          <a
-            href="https://www.facebook.com/watch/?extid=CL-UNK-UNK-UNK-IOS_GK0T-GK1C&mibextid=2Rb1fB&v=454832936826793"
-            target="_blank"
-            rel="noreferrer"
-            className="ml-2"
-          >
-            Посилання
-          </a>
-        </h3>
+        <div className="flex">
+          <h3>
+            Громадська організація «Офіс на Банковій» на захисті червоно
+            книжкових тварин Київщини.
+          </h3>
+          <FacebookIcon
+            onClick={onRedirect}
+            className="ml-2 mt-2 cursor-pointer"
+          />
+        </div>
         <span className="text-xl">
           Українська земля - це дивовижний куточок планети, де можна знайти
           сотні унікальних різновидів тварин, яких майже не залишилось на світі.
