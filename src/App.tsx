@@ -1,21 +1,15 @@
 import "./App.css";
 import "rsuite/dist/rsuite.min.css";
-import { Header } from "./components/Header";
-import { Post1 } from "./components/post1";
-import { Post2 } from "./components/post2";
-import { Intro } from "./components/Intro";
-import { History } from "./components/History";
-import { Team } from "./components/Team";
-import { BankDetails } from "./components/BankDetails";
+import { Header } from "./Landing/Header";
+import { Intro } from "./Landing/Intro";
+import { History } from "./Landing/History";
+import { Team } from "./Landing/Team";
+import { BankDetails } from "./Landing/BankDetails";
 import { Navbar, Nav } from "rsuite";
 import { useState } from "react";
-import { Post3 } from "./components/post3";
-import { Post4 } from "./components/post4";
-import { Post5 } from "./components/post5";
-import { Post6 } from "./components/post6";
-import { Post7 } from "./components/post7";
-import { Post8 } from "./components/post8";
-import { Post9 } from "./components/post9";
+import { Events } from "./Events";
+import { Reports } from "./Reports";
+import { News } from "./News";
 
 function App() {
   const [navState, setNavState] = useState("about");
@@ -24,15 +18,16 @@ function App() {
       <Header />
       <Navbar
         appearance="subtle"
-        className="lg:px-40 sm:px-20 px-10 text-2xl font-bold"
+        className="lg:px-40 sm:px-20 xsm:px-4 text-2xl font-bold border-b-2 border-gray-200 flex w-full justify-center"
       >
         <Nav onSelect={(key) => setNavState(key)} activeKey={navState}>
           <Nav.Item eventKey="about">Про нас</Nav.Item>
           <Nav.Item eventKey="events">Збори</Nav.Item>
           <Nav.Item eventKey="report">Звiти</Nav.Item>
+          <Nav.Item eventKey="news">Новини</Nav.Item>
         </Nav>
       </Navbar>
-      <div className="lg:px-40 sm:px-20 px-10 max-w-400">
+      <div className="lg:px-40 xsm:px-0  sm:px-10 max-w-400 flex flex-col justify-center items-center">
         {navState === "about" && (
           <>
             <Intro />
@@ -44,23 +39,9 @@ function App() {
             <BankDetails />
           </>
         )}
-        {navState === "events" && (
-          <>
-            <Post1 />
-            <Post4 />
-            <Post6 />
-            <Post8 />
-          </>
-        )}
-        {navState === "report" && (
-          <>
-            <Post2 />
-            <Post3 />
-            <Post5 />
-            <Post7 />
-            <Post9 />
-          </>
-        )}
+        {navState === "events" && <Events />}
+        {navState === "report" && <Reports />}
+        {navState === "news" && <News />}
       </div>
     </div>
   );

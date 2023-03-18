@@ -10,6 +10,13 @@ module.exports = {
         164: "41rem",
         100: "25rem",
       },
+      height: {
+        400: "40rem",
+        88: "22rem",
+        80: "20rem",
+        164: "41rem",
+        100: "25rem",
+      },
       colors: {
         gray: {
           footerBackground: "#2f2f2f",
